@@ -59,11 +59,13 @@ input_dollars.setPlaceholderText("Введите доллары")
 window.setWindowIcon(QtGui.QIcon(''))
 
 btn_rubles = QPushButton("Перевести рубли\n в доллары")
+btn_rubles.setStyleSheet(styles_for_btn)
 btn_rubles.clicked.connect(
     lambda: rubles_to_dollars(input_rubles, result_container)
 )
 
 btn_dollars = QPushButton("Перевести\nдоллары в рубли")
+btn_dollars.setStyleSheet(styles_for_btn)
 btn_dollars.clicked.connect(
     lambda: dollars_to_rubles(input_rubles, result_container)
 )
