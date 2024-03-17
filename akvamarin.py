@@ -51,7 +51,7 @@ label_info = QLabel("")
 window.setStyleSheet("color:black;")
 window.setWindowTitle("Конвертатор валют")
 
-result_container = QLable()
+result_container = QLabel()
 input_rubles = QLineEdit()
 input_rubles.setPlaceholderText("Введите рубли")
 input_dollars = QLineEdit()
